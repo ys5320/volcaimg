@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "volcaimg"
+version = "0.1.0"
+description = "Analysis of simultaneous voltage and calcium fluorescence imaging in cancer cells"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Yilin Sun", email = "yilin.sun20@imperial.ac.uk" }
+]
+keywords = [
+    "cancer", "electrophysiology", "voltage imaging",
+    "calcium imaging", "fluorescence", "timeseries", "bioelectricity"
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+]
+requires-python = ">=3.9"
+dependencies = [
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "pandas>=2.0",
+    "matplotlib>=3.7",
+    "tifffile>=2023.1",
+    "opencv-python>=4.7",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "jupyter"]
+
+[project.urls]
+Homepage = "https://github.com/ys5320/volcaimg"
+Repository = "https://github.com/ys5320/volcaimg"
+
+[tool.setuptools.packages.find]
+where = ["src"]
