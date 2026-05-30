@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+src/volcaimg/__init__.py
+src/volcaimg/correlation.py
+src/volcaimg/detection.py
+src/volcaimg/io.py
+src/volcaimg/preprocessing.py
+src/volcaimg/qc.py
+src/volcaimg/summary.py
+src/volcaimg/visualisation.py
+src/volcaimg.egg-info/PKG-INFO
+src/volcaimg.egg-info/SOURCES.txt
+src/volcaimg.egg-info/dependency_links.txt
+src/volcaimg.egg-info/requires.txt
+src/volcaimg.egg-info/top_level.txt
+tests/test_preprocessing.py
